@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+.footer{
+    position: absolute;
+    bottom: auto;
+    display: block;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+}.bai11{
+    position: absolute; position: relative;
+    text-align: center;
+    border: double;
+    size: 0px ;
+
+}
+.bai12{
+    position: absolute; position: relative;
+    border: double;}
+.box {
+  width: 200px; height: 300px;
+  position: relative;
+  border: 1px solid #BBB;
+  background: #EEE;
+}
+.ribbon {
+  position: absolute;
+  left: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#F70505 0%, #870808 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; left: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #870808;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #870808;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #870808;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #870808;
+}.bai12b{
+    box-shadow: 0 0 10px #888888;
+    text-shadow: 0 0 3px #000000;}
+
+
+.bai13{
+    position: relative;position: absolute;
+    border: double;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+<style type="text/css">
+    .bai14{
+    position: absolute; position: relative;
+        width: 300px;
+        height: 170px;
+        background: #6FAC21;
+        opacity: 0.8;
+        border-radius: 10px;
+        transition: all 2s linear;
+        margin: 50px 50px;
+        text-align: justify;
+        border-bottom: dashed;
+        border-left: double;
+        border-right: dashed;
+        border-top: double;
+        border-color: red;
+    }
+    #bai14{
+        color: white;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 16px;
+        transition: all 2s;
+    }
+    .bai14:hover{
+        transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(2) rotate(360deg);
+        -mos-transform:scale(2) rotate(360deg);
+        -o-transform: scale(2) rotate(360deg);
+        -ms-transform: scale(2) rotate(360deg);
+        background: #1EC7E6;
+        opacity: 0.8;
+    }
+    input[ type=text] {
+        width: 100px;
+        -webkit-transition: width .35s ease-in-out;
+        transition: width 35s ease-in-out;
+    }
+    input[type=text]:focus{
+        width: 250px;
+        background-color: lightgreen;
+    
+    }.bai16 li{
+        position: absolute; position: relative;
+        width: 100px; padding: 10px 15px;
+        margin: 5px; background: #0d90df;
+        color: #ffffff; font-size: 14px; font-weight: boLD;
+        line-height: 1.3em;
+        border: 2px dashed #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 4px #0d90df, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+        text-shadow: -1px -1px #aa3030;
+        font-weight: normal;
+        text-align: center;
+    }
+    li a{text-decoration: none; color: whitesmoke;}
+    .bai16li:hover{background-color: #0d90df; border: 1px solid rosybrown;}
+    li:hover>a{font-weight: lighter;font-style: italic;}
+    .bai16 li:nth-child(1){right: 0;}
+    .bai16 li:nth-child(2){right: 81px; bottom: -40px;}
+    .bai16 li:nth-child(3){right: 175px; bottom: -80px;}
+    .bai16 li:nth-child(4){right: 270px; bottom: -120px;}
+
+    .bai17 li{height: 20px; width: 110px;background-color: red; list-style: none;
+    position: relative ; position: absolute;
+    bottom: -900px;left:0px; line-height: 20px;text-indent: 20px; border: 1px solid white;border-radius: 10%;}
+    li a{text-align: none; color: white;}
+    .bai17 li:hover{background-color: red;border: 1px solid;}
+    li:hover>a{; font-weight: lighter; font-style: italic;}
+    .bai17 li:nth-child(1){left: 0px;}
+    .bai17 li:nth-child(2){left: 110px;}
+    .bai17 li:nth-child(3){left: 220px;}
+    .bai17 li:nth-child(4){left: 330px;}
+    .bai17 li:nth-child(5){left: 440px;}
+    .bai17 li:nth-child(6){left: 550px;}
+</style>
+<style type="text/css">
+    nav{
+        display: block;
+        position: absolute;
+        top: ;
+        width: 100%;
+        background-color: green;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    a:link{
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: orange;
+        text-decoration: none;
+    }
+    li >ul {display: none;}
+    li:hover ul {
+        display: block; position: absolute;
+        left: 200px;
+        background-color: green;margin: 0;
+    }
+    li:hover ul li a:link{
+        display: block; margin-left: -30px;
+    }
+    
+    </style>
+<style type="text/css">
+    .bai19{
+        display: block;
+        position: absolute;
+        bottom: -1100px; ;
+        width: 100%;
+        background-color: green;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    a:link{
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: orange;
+        text-decoration: none;
+    }
+    li >ul {display: none;}
+    li:hover ul {
+        display: block; position: absolute;
+        left: 200px;
+        background-color: green;margin: 0;
+    }
+    li:hover ul li a:link{
+        display: block; margin-left: -30px;
+    }
+    .bai20 li{
+        position: absolute; position: relative;
+        width: 100px; padding: 6px 5px;
+        margin: 5px; background: #0d90df;
+        color: #ffffff; font-size: 14px; font-weight: bold;
+        line-height: 1.3em;
+        border: 2px dashed #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 4px #0d90df, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+        text-shadow: -1px -1px #aa3030;
+        font-weight: normal;
+        text-align: center;
+    }
+    li a{text-decoration: none; color: whitesmoke;}
+    .bai20 li:hover{background-color: #0d90df; border: 1px solid rosybrown;}
+    li:hover>a{font-weight: lighter;font-style: italic;}
+    .bai20 li:nth-child(1){right: 0px;}
+    .bai20 li:nth-child(2){right: 65px; bottom: -30px;}
+    .bai20 li:nth-child(3){right: 140px; bottom: -60px;}
+    .bai20 li:nth-child(4){right: 215px; bottom: -90px;}
+    .bai20 li:nth-child(5){right: 230px; bottom: -60px;}
+    .bai20 li:nth-child(6){right: 330px; padding: 30px 6px; bottom: -115px;}
+    .bai20 li:nth-child(7){right: 520px; bottom: -175px;}
+
+</style>
+
+<body>
+    bai11 
+    <div class="bai11">
+        <p>
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup  language . Although most often used to change the style of web pages and user interfaces writtenin HTML and XHTML , the language can be applied to any kind of XML document nincluding plain XML,SVG and XUL . Along with HTML AND javaScript,CSS is a cornerstone technology used  by most websites to create visually engaging webpages , user interfaces for web applications,and user interfaces for many mobile applications.[1]<br>
+            CSS is designed primaryly to enable the separation of document content from document oresentation , includinf elements such as the layout , colors,and fonts.[2]This separation can improve content accessibility,provide more dlexibility and control in the specification od oresentation characteristics , enable multiple HTML pages to share
+        </p>
+         <div class="footer">
+        <p>I will be stuck here</p>
+    </div>
+    </div>
+   <br>
+   <br><br>
+    bai12
+    <div class="bai12">
+        <div class="box">
+            <div class="ribbon"><span>Best seller 2015</span></div>
+        </div>
+        </div>
+        <div class="bai12b">
+            <h1><b>Cascading Style Sheets Book</b></h1>
+        </div>
+        <div class="bai12c"> Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup  language . Although most often used to change the style of web pages and user interfaces writtenin HTML and XHTML , the language can be applied to any kind of XML document nincluding plain XML,SVG and XUL . Along with HTML AND javaScript,CSS is a cornerstone technology used  by most websites to create visually engaging webpages , user interfaces for web applications,and user interfaces for many mobile applications.[1]</div>
+
+    </div>
+    <br>
+    bai13
+    <br><br>
+    <div class="gallery">
+    <a target="_blank" href="./img/1.jpg">
+      <img src="./img/1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc"> The description of Marguerite 1 here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="./img/2.jpg">
+      <img src="./img/2.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">The description of Marguerite 2 here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="./img/3.jpg">
+      <img src="./img/3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">The description of Marguerite 3 here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="./img/4.jpg">
+      <img src="./img/4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">The description of Marguerite 4 here</div>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    bai14
+    <div class="bai14"><p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML,  and XHTML, the language can be applied to any kind of XML, document , including plain XML,SVG and XUL</p></div>
+    <br><br><br><br><br>
+    bai15
+    <div class="bai15">
+        <p>Seach:</p>
+        <input type="text" name="txtName" ></div>
+    <br>
+    bai16
+    <div class="bai16">
+        <ul>
+            <li>Home </li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>Contact</li>
+        </ul>
+    </div><br><br><br><br><br><br>
+    bai17
+    <div class="bai17">
+        <ul>
+            <li ><a href="#">HOME</a></li>
+            <li ><a href="#">NEWS</a></li>
+            <li ><a href="#">ARTICLES</a></li>
+            <li ><a href="#">FORUM</a></li>
+            <li ><a href="#">CONTACT</a></li>
+            <li ><a href="#">ABOUT</a></li>
+        </ul>
+    </div><br><br>
+    bai18
+        <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li ><a href="#">About</a></li>
+          <li ><a href="#">Products</a>
+          <ul>
+            <li ><a href="#">Engineering</a></li>
+            <li ><a href="#">Telecom</a></li>
+            <li ><a href="#">Energy</a></li>
+            <li ><a href="#">Finance</a></li>
+            <li ><a href="#">Consultancy</a></li>
+          </ul>
+          </li>
+          <li ><a href="#">Services</a></li>
+          <li ><a href="#">Contact</a></li>
+        </ul>
+        </nav><br><br><br><br><br>
+    bai19
+    <div class="bai19">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Introdution</a>
+                <ul>
+                <li><a href="#">123</a></li>
+                <li><a href="#">456</a></li>
+                <li><a href="#">789</a></li>
+            </ul></li>
+            <li><a href="#">Portfolio</a>
+            <ul>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Web&User Interface Design</a></li>
+                <li><a href="#">lllustration</a></li>
+            </ul></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div><br><br><br><br><br><br><br>
+    bai20
+    <div class="bai20">
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Products</li>
+        <li>Contact</li>
+        <li>Photography</li>
+        <li>Web & User Interface Design</li>
+        <li>lllustration</li>    
+    </ul>
+    </div>
+</body>
+</html>
